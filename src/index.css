@@ -1,0 +1,214 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --background: 0 0% 7%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 24 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 24 100% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 24 100% 50%;
+
+    --radius: 0.5rem;
+
+    /* Custom gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(24 100% 50%), hsl(15 100% 45%));
+    --gradient-dark: linear-gradient(180deg, hsl(0 0% 7%), hsl(0 0% 4%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 12%), hsl(0 0% 8%));
+    
+    /* Custom shadows */
+    --shadow-glow: 0 0 40px hsl(24 100% 50% / 0.3);
+    --shadow-card: 0 10px 40px hsl(0 0% 0% / 0.5);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    @apply font-bold tracking-tight;
+  }
+}
+
+@layer components {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-primary);
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-8 py-4 text-lg font-semibold text-primary-foreground rounded-lg transition-all duration-300;
+    background: var(--gradient-primary);
+    box-shadow: var(--shadow-glow);
+  }
+
+  .btn-primary:hover {
+    @apply scale-105;
+    box-shadow: 0 0 60px hsl(24 100% 50% / 0.5);
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 px-8 py-4 text-lg font-semibold border-2 border-primary text-primary rounded-lg transition-all duration-300 hover:bg-primary hover:text-primary-foreground;
+  }
+
+  .card-glow {
+    @apply relative overflow-hidden rounded-xl;
+    background: var(--gradient-card);
+    box-shadow: var(--shadow-card);
+  }
+
+  .card-glow::before {
+    content: '';
+    @apply absolute inset-0 opacity-0 transition-opacity duration-300;
+    background: linear-gradient(135deg, hsl(24 100% 50% / 0.1), transparent);
+  }
+
+  .card-glow:hover::before {
+    @apply opacity-100;
+  }
+
+  .section-padding {
+    @apply py-20 md:py-28 lg:py-32 px-4 md:px-8;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+}
+
+@layer utilities {
+  .animate-fade-up {
+    animation: fadeUp 0.8s ease-out forwards;
+    opacity: 0;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+    opacity: 0;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.5s ease-out forwards;
+    opacity: 0;
+  }
+
+  .animate-slide-left {
+    animation: slideLeft 0.8s ease-out forwards;
+    opacity: 0;
+  }
+
+  .animate-slide-right {
+    animation: slideRight 0.8s ease-out forwards;
+    opacity: 0;
+  }
+
+  .delay-100 { animation-delay: 100ms; }
+  .delay-200 { animation-delay: 200ms; }
+  .delay-300 { animation-delay: 300ms; }
+  .delay-400 { animation-delay: 400ms; }
+  .delay-500 { animation-delay: 500ms; }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(0 0% 10%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(24 100% 50%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(24 100% 60%);
+}
