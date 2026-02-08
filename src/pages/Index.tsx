@@ -7,6 +7,7 @@ import Community from '@/components/Community';
 import CTA from '@/components/CTA';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import OtherActivities from '@/components/OtherActivities';
 
 const Index = () => {
   return (
@@ -16,6 +17,7 @@ const Index = () => {
         <Hero />
         <About />
         <Modalities />
+        <OtherActivities />
         <ForWho />
         <Community />
         <CTA />

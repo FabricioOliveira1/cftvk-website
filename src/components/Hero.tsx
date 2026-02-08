@@ -23,7 +23,7 @@ const Hero = () => {
     return () => observer.disconnect();
   }, []);
 
-  const whatsappLink = "https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma aula experimental no CFTVK.";
+  const whatsappLink = "https://wa.me/+5521998818822?text=Olá! Gostaria de agendar uma aula experimental no CFTVK.";
 
   return (
     <section 
@@ -44,7 +44,7 @@ const Hero = () => {
           {/* Badge */}
           <div className="animate-on-scroll opacity-0 mb-6">
             <span className="inline-block px-4 py-2 rounded-full bg-primary/20 text-primary text-sm font-semibold tracking-wider uppercase">
-              Centro de Treinamento Funcional
+              Centro de Treinamento CrossFit VK
             </span>
           </div>
 
@@ -82,11 +82,11 @@ const Hero = () => {
           </div>
 
           {/* Stats */}
-          <div className="animate-on-scroll opacity-0 delay-400 mt-16 grid grid-cols-3 gap-8 max-w-xl mx-auto">
+{/*           <div className="animate-on-scroll opacity-0 delay-400 mt-16 grid grid-cols-3 gap-8 max-w-xl mx-auto">
             {[
-              { value: '500+', label: 'Alunos' },
-              { value: '10+', label: 'Coaches' },
-              { value: '5', label: 'Anos' },
+              { value: '50+', label: 'Alunos' },
+              { value: '5+', label: 'Coaches' },
+              { value: '7', label: 'Anos' },
             ].map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="font-display text-3xl md:text-4xl font-bold text-primary">
@@ -97,17 +97,17 @@ const Hero = () => {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
 
       {/* Scroll Indicator */}
-      <a 
+      {/* <a 
         href="#sobre"
         className="absolute bottom-8 left-1/2 -translate-x-1/2 text-muted-foreground hover:text-primary transition-colors animate-bounce"
       >
         <ChevronDown size={32} />
-      </a>
+      </a> */}
     </section>
   );
 };

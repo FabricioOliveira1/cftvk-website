@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { Dumbbell, Zap, Activity, Timer, Users } from 'lucide-react';
 
-const Modalities = () => {
+const OtherActivities = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -25,27 +25,21 @@ const Modalities = () => {
   const modalities = [
     {
       icon: Zap,
-      title: 'Cross Fit',
+      title: 'Tecido Acrobático',
       description: 'Treinos intensos e variados que combinam força, cardio e ginástica para resultados rápidos.',
       benefits: ['Alta queima calórica', 'Ganho de força', 'Condicionamento total'],
     },
     {
       icon: Activity,
-      title: 'Condicionamento Físico, Força e Resistência',
+      title: 'Lira Circense',
       description: 'Aulas focadas em melhorar sua resistência cardiovascular e capacidade respiratória.',
       benefits: ['Mais energia', 'Coração saudável', 'Resistência física'],
     },
     {
       icon: Timer,
-      title: 'Força e Resistência',
+      title: 'Lutas',
       description: 'Treinos com cargas progressivas para desenvolver músculos fortes e funcionais.',
       benefits: ['Ganho muscular', 'Metabolismo acelerado', 'Força real'],
-    },
-    {
-      icon: Users,
-      title: 'Aulas em Grupo',
-      description: 'Energia contagiante das aulas coletivas com motivação do grupo e dos coaches.',
-      benefits: ['Motivação extra', 'Comunidade', 'Diversão'],
     },
   ];
 
@@ -54,15 +48,12 @@ const Modalities = () => {
       <div className="container-custom">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="animate-on-scroll opacity-0 inline-block text-primary font-semibold uppercase tracking-wider mb-4">
-            Modalidades
-          </span>
           <h2 className="animate-on-scroll opacity-0 delay-100 font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            Atividades que
-            <span className="text-gradient"> Transformam</span>
+            E temos mais atividades para você se <span className="text-gradient">desafiar</span>
           </h2>
           <p className="animate-on-scroll opacity-0 delay-200 text-muted-foreground text-lg">
-            Oferecemos diferentes modalidades para você encontrar a melhor forma de alcançar seus objetivos e transformar seu corpo e mente.
+            Oferecemos diferentes atividades para você encontrar a que mais combina 
+            com seu estilo de vida.
           </p>
         </div>
 
@@ -104,4 +95,4 @@ const Modalities = () => {
   );
 };
 
-export default Modalities;
+export default OtherActivities;

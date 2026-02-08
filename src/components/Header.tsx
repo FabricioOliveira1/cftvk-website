@@ -21,7 +21,7 @@ const Header = () => {
     { href: '#contato', label: 'Contato' },
   ];
 
-  const whatsappLink = "https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma aula experimental no CFTVK.";
+  const whatsappLink = "https://wa.me/+5521998818822?text=Olá! Gostaria de agendar uma aula experimental no CFTVK.";
 
   return (
     <header 
