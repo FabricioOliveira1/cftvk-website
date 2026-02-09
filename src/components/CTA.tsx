@@ -1,5 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { MessageCircle } from 'lucide-react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 const CTA = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -22,7 +24,7 @@ const CTA = () => {
     return () => observer.disconnect();
   }, []);
 
-  const whatsappLink = "https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma aula experimental no CFTVK.";
+  const whatsappLink = "https://wa.me/+5521998818822?text=Olá! Gostaria de agendar uma aula experimental no CFTVK.";
 
   return (
     <section ref={sectionRef} className="section-padding relative overflow-hidden">
@@ -42,7 +44,7 @@ const CTA = () => {
             <span className="text-gradient"> te esperando.</span>
           </h2>
           <p className="animate-on-scroll opacity-0 delay-200 text-muted-foreground text-lg md:text-xl mb-10 max-w-2xl mx-auto">
-            Agende sua aula experimental gratuita e descubra por que centenas de 
+            Agende sua aula experimental gratuita e descubra por que muitas 
             pessoas escolheram o CFTVK para transformar suas vidas.
           </p>
 
@@ -54,7 +56,7 @@ const CTA = () => {
               rel="noopener noreferrer"
               className="btn-primary text-lg py-5 px-10 inline-flex items-center gap-3"
             >
-              <MessageCircle className="w-6 h-6" />
+                <FontAwesomeIcon size="2xl" icon={faWhatsapp} />
               Fale com a gente no WhatsApp
             </a>
           </div>
@@ -63,11 +65,11 @@ const CTA = () => {
           <div className="animate-on-scroll opacity-0 delay-400 mt-12 flex flex-wrap items-center justify-center gap-8 text-muted-foreground">
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-primary" />
-              <span>Aula experimental gratuita</span>
+              <span>3 aulas experimentais gratuitas</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-primary" />
-              <span>Avaliação física inclusa</span>
+              <span>Supervisão de profissionais qualificados</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-primary" />

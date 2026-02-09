@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { Check } from 'lucide-react';
-import training1 from '@/assets/training-1.jpg';
-import training2 from '@/assets/training-2.jpg';
+import training1 from '@/assets/training-1.jpeg';
+import training2 from '@/assets/training-2.jpeg';
 
 const ForWho = () => {
   const sectionRef = useRef<HTMLDivElement>(null);

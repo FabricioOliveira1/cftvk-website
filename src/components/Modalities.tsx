@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { Dumbbell, Zap, Activity, Timer, Users } from 'lucide-react';
+import { Dumbbell , Star, Trophy } from 'lucide-react';
 
 const Modalities = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -24,29 +24,23 @@ const Modalities = () => {
 
   const modalities = [
     {
-      icon: Zap,
-      title: 'Cross Fit',
+      icon: Dumbbell,
+      title: 'Crossfit',
       description: 'Treinos intensos e variados que combinam força, cardio e ginástica para resultados rápidos.',
       benefits: ['Alta queima calórica', 'Ganho de força', 'Condicionamento total'],
     },
     {
-      icon: Activity,
-      title: 'Condicionamento Físico, Força e Resistência',
-      description: 'Aulas focadas em melhorar sua resistência cardiovascular e capacidade respiratória.',
-      benefits: ['Mais energia', 'Coração saudável', 'Resistência física'],
+      icon: Star ,
+      title: 'Tecido Acrobático e Lira Circense',
+      description: 'Desenvolva força, flexibilidade e coordenação através de técnicas aéreas e acrobáticas.',
+      benefits: ['Força funcional', 'Flexibilidade', 'Coordenação motora'],
     },
     {
-      icon: Timer,
-      title: 'Força e Resistência',
-      description: 'Treinos com cargas progressivas para desenvolver músculos fortes e funcionais.',
-      benefits: ['Ganho muscular', 'Metabolismo acelerado', 'Força real'],
-    },
-    {
-      icon: Users,
-      title: 'Aulas em Grupo',
-      description: 'Energia contagiante das aulas coletivas com motivação do grupo e dos coaches.',
-      benefits: ['Motivação extra', 'Comunidade', 'Diversão'],
-    },
+      icon: Trophy,
+      title: 'Lutas e Boxe',
+      description: 'Aprenda técnicas de defesa pessoal enquanto melhora seu condicionamento físico e disciplina.',
+      benefits: ['Autodefesa', 'Resistência cardiovascular', 'Disciplina'],
+    }
   ];
 
   return (
