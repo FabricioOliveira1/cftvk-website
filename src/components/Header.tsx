@@ -33,7 +33,17 @@ const Header = () => {
         <nav className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#" className="font-display text-2xl md:text-3xl font-bold tracking-wider">
-            <img src="/images/cftvk-logo.webp" alt="CFTVK Logo" style={{ height: '80px' }}  className="h-8 md:h-10 mr-2 inline-block" />
+            <img 
+              src="/images/cftvk-logo.webp" 
+              alt="CFTVK Logo" 
+              style={{ height: '80px' }}
+              className="h-8 md:h-10 mr-2 inline-block" 
+              loading="eager"
+              decoding="async"
+              fetchPriority="high"
+              width={80}
+              height={80}
+            />
             <span className="text-gradient">Crossfit </span>
             <span className="text-foreground">VK</span>
           </a>
