@@ -33,7 +33,8 @@ const Header = () => {
         <nav className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#" className="font-display text-2xl md:text-3xl font-bold tracking-wider">
-            <span className="text-gradient">CFT</span>
+            <img src="/src/assets/cftvk-logo.webp" alt="CFTVK Logo" style={{ height: '80px' }}  className="h-8 md:h-10 mr-2 inline-block" />
+            <span className="text-gradient">Crossfit </span>
             <span className="text-foreground">VK</span>
           </a>
 
@@ -73,7 +74,9 @@ const Header = () => {
 
         {/* Mobile Menu */}
         <div 
-          className={`lg:hidden absolute top-full left-0 right-0 bg-background/98 backdrop-blur-md transition-all duration-300 overflow-hidden ${
+          className={`lg:hidden absolute top-full left-0 right-0 backdrop-blur-md transition-all duration-300 overflow-hidden ${
+            isScrolled ? 'bg-background/95' : 'bg-background/98'
+          } ${
             isMobileMenuOpen ? 'max-h-screen py-6' : 'max-h-0'
           }`}
         >

@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { Heart, TrendingUp, Users, Award } from 'lucide-react';
-import coachImage from '@/assets/coach.jpg';
+import coachImage from '@/assets/coach.jpeg';
 
 const About = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -83,7 +83,7 @@ const About = () => {
             <p className="animate-on-scroll opacity-0 delay-200 text-muted-foreground text-lg mb-8 leading-relaxed">
               O CFTVK nasceu da paixão por transformar vidas através do movimento. 
               Acreditamos que todo mundo pode evoluir, independente do ponto de partida. 
-              Com treinos funcionais e cross training, ajudamos você a conquistar saúde, 
+              Com treinos funcionais e crossfit, ajudamos você a conquistar saúde, 
               força e autoconfiança em um ambiente acolhedor e desafiador.
             </p>
 

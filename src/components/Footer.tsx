@@ -1,7 +1,9 @@
+import { faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { MapPin, Clock, Phone, Instagram, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
-  const whatsappLink = "https://wa.me/5511999999999?text=Olá! Gostaria de mais informações sobre o CFTVK.";
+  const whatsappLink = "https://wa.me/+5521998818822?text=Olá! Gostaria de mais informações sobre o CFTVK.";
 
   return (
     <footer id="contato" className="bg-card border-t border-border">
@@ -14,28 +16,30 @@ const Footer = () => {
               <span className="text-foreground">VK</span>
             </a>
             <p className="text-muted-foreground mb-6 max-w-md">
-              Centro de Treinamento Funcional e Cross Training. Transformando vidas 
+              Centro de Crossfit e Treinamento Funcional. Transformando vidas
               através do movimento, saúde e comunidade.
             </p>
             {/* Social Links */}
             <div className="flex items-center gap-4">
-              <a 
-                href="https://instagram.com/cftvk" 
-                target="_blank" 
+              <a
+                href="https://www.instagram.com/cftvk?igsh=ZTJmeGxmOHYyZDFm"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-muted flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
                 aria-label="Instagram"
               >
-                <Instagram size={20} />
+                <FontAwesomeIcon size="lg" icon={faInstagram} className="text-muted-foreground" />
+
               </a>
-              <a 
+              <a
                 href={whatsappLink}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-muted flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
                 aria-label="WhatsApp"
               >
-                <MessageCircle size={20} />
+
+                <FontAwesomeIcon size="lg" icon={faWhatsapp} className="text-muted-foreground" />
               </a>
             </div>
           </div>
@@ -47,13 +51,13 @@ const Footer = () => {
               <li className="flex items-start gap-3 text-muted-foreground">
                 <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <span>
-                  Rua do Fitness, 123<br />
-                  Bairro Centro - São Paulo/SP
+                  Av. Meriti, 586<br />
+                  Vila Kosmos - Rio de Janeiro/RJ
                 </span>
               </li>
               <li className="flex items-center gap-3 text-muted-foreground">
-                <Phone className="w-5 h-5 text-primary flex-shrink-0" />
-                <span>(11) 99999-9999</span>
+                <FontAwesomeIcon size="lg" color='#e8b843' icon={faWhatsapp} />
+                <span>(21) 99881-8822</span>
               </li>
             </ul>
           </div>
@@ -66,14 +70,20 @@ const Footer = () => {
                 <Clock className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="font-medium text-foreground">Segunda a Sexta</p>
-                  <p>06:00 - 21:00</p>
+                  <p>06:00 - 07:00</p>
+                  <p>08:00 - 09:00</p>
+                  <p>09:00 - 10:00</p>
+                  <p>15:00 - 16:00</p>
+                  <p>18:00 - 19:00</p>
+                  <p>19:00 - 20:00</p>
+                  <p>20:00 - 21:00</p>
                 </div>
               </li>
               <li className="flex items-start gap-3 text-muted-foreground">
                 <Clock className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <div>
-                  <p className="font-medium text-foreground">Sábado</p>
-                  <p>08:00 - 12:00</p>
+                  <p className="font-medium text-foreground">Sábados</p>
+                  <p>09:00 - 10:00</p>
                 </div>
               </li>
             </ul>
@@ -85,7 +95,7 @@ const Footer = () => {
           <p className="text-muted-foreground text-sm">
             © {new Date().getFullYear()} CFTVK. Todos os direitos reservados.
           </p>
-          <a 
+          <a
             href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"

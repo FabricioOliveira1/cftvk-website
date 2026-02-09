@@ -1,7 +1,9 @@
 import { MessageCircle } from 'lucide-react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 const WhatsAppButton = () => {
-  const whatsappLink = "https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma aula experimental no CFTVK.";
+  const whatsappLink = "https://wa.me/+5521998818822?text=Olá! Gostaria de agendar uma aula experimental no CFTVK.";
 
   return (
     <a
@@ -15,7 +17,8 @@ const WhatsAppButton = () => {
       }}
       aria-label="Contato via WhatsApp"
     >
-      <MessageCircle className="w-7 h-7 text-white" fill="white" />
+      
+      <FontAwesomeIcon size="2xl" icon={faWhatsapp} className="text-white" />
     </a>
   );
 };

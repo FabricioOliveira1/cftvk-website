@@ -14,7 +14,7 @@
     --popover: 0 0% 10%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 24 100% 50%;
+    --primary: 43 78% 59%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 0 0% 15%;
@@ -36,9 +36,11 @@
     --radius: 0.5rem;
 
     /* Custom gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(24 100% 50%), hsl(15 100% 45%));
+    --gradient-primary: linear-gradient(135deg, hsl(43, 78%, 59%), hsl(34 100% 54%));
     --gradient-dark: linear-gradient(180deg, hsl(0 0% 7%), hsl(0 0% 4%));
     --gradient-card: linear-gradient(145deg, hsl(0 0% 12%), hsl(0 0% 8%));
+
+    /*-9 100% -5% */
     
     /* Custom shadows */
     --shadow-glow: 0 0 40px hsl(24 100% 50% / 0.3);

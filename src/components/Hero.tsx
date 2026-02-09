@@ -59,7 +59,7 @@ const Hero = () => {
 
           {/* Subheadline */}
           <p className="animate-on-scroll opacity-0 delay-200 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
-            No CFTVK você encontra saúde, performance e uma comunidade que te impulsiona 
+            No Crossfit VK você encontra saúde, performance e uma comunidade que te impulsiona 
             a ir além. Treino funcional e cross training para todos os níveis.
           </p>
 
@@ -80,34 +80,8 @@ const Hero = () => {
               Conhecer o CFTVK
             </a>
           </div>
-
-          {/* Stats */}
-{/*           <div className="animate-on-scroll opacity-0 delay-400 mt-16 grid grid-cols-3 gap-8 max-w-xl mx-auto">
-            {[
-              { value: '50+', label: 'Alunos' },
-              { value: '5+', label: 'Coaches' },
-              { value: '7', label: 'Anos' },
-            ].map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="font-display text-3xl md:text-4xl font-bold text-primary">
-                  {stat.value}
-                </div>
-                <div className="text-sm text-muted-foreground uppercase tracking-wider mt-1">
-                  {stat.label}
-                </div>
-              </div>
-            ))}
-          </div> */}
         </div>
       </div>
-
-      {/* Scroll Indicator */}
-      {/* <a 
-        href="#sobre"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-muted-foreground hover:text-primary transition-colors animate-bounce"
-      >
-        <ChevronDown size={32} />
-      </a> */}
     </section>
   );
 };

@@ -1,8 +1,8 @@
 import { useEffect, useRef } from 'react';
-import communityImg from '@/assets/community.jpg';
-import training1 from '@/assets/training-1.jpg';
-import training2 from '@/assets/training-2.jpg';
-import training3 from '@/assets/training-3.jpg';
+import communityImg from '@/assets/community.jpeg';
+import training1 from '@/assets/training-6.jpeg';
+import training2 from '@/assets/training-4.jpeg';
+import training3 from '@/assets/training-5-edited.jpeg';
 
 const Community = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -79,11 +79,11 @@ const Community = () => {
           </blockquote>
           <div className="flex items-center justify-center gap-4">
             <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
-              <span className="text-primary font-bold">MR</span>
+              <span className="text-primary font-bold">NB</span>
             </div>
             <div className="text-left">
-              <p className="font-semibold text-foreground">Maria Rodrigues</p>
-              <p className="text-sm text-muted-foreground">Aluna há 2 anos</p>
+              <p className="font-semibold text-foreground">Nathalia Brum</p>
+              <p className="text-sm text-muted-foreground">Aluna há 3 anos</p>
             </div>
           </div>
         </div>
