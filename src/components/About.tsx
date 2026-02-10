@@ -83,7 +83,7 @@ const About = () => {
             <p className="animate-on-scroll opacity-0 delay-200 text-muted-foreground text-lg mb-8 leading-relaxed">
               O CFTVK nasceu da paixão por transformar vidas através do movimento. 
               Acreditamos que todo mundo pode evoluir, independente do ponto de partida. 
-              Com treinos funcionais e crossfit, ajudamos você a conquistar saúde, 
+              Com o Crossfit, ajudamos você a conquistar saúde, 
               força e autoconfiança em um ambiente acolhedor e desafiador.
             </p>
 

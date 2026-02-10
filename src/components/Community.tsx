@@ -1,8 +1,9 @@
 import { useEffect, useRef } from 'react';
 import communityImg from '@/assets/community.jpeg';
-import training1 from '@/assets/training-6.jpeg';
+import training1 from '@/assets/training-3.jpeg';
 import training2 from '@/assets/training-4.jpeg';
-import training3 from '@/assets/training-5-edited.jpeg';
+import training3 from '@/assets/training-5.jpeg';
+import training4 from '@/assets/training-6.jpeg';
 
 const Community = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -30,6 +31,7 @@ const Community = () => {
     { src: training1, alt: 'Treino de cordas' },
     { src: training2, alt: 'Treino de força' },
     { src: training3, alt: 'Aula em grupo' },
+    { src: training4, alt: 'Treino de boxe' },
   ];
 
   return (

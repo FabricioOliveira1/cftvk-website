@@ -37,7 +37,7 @@ const Modalities = () => {
     },
     {
       icon: Trophy,
-      title: 'Lutas e Boxe',
+      title: 'Lutas',
       description: 'Aprenda técnicas de defesa pessoal enquanto melhora seu condicionamento físico e disciplina.',
       benefits: ['Autodefesa', 'Resistência cardiovascular', 'Disciplina'],
     }
