@@ -60,7 +60,7 @@ const Hero = () => {
           {/* Subheadline */}
           <p className="animate-on-scroll opacity-0 delay-200 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
             No Crossfit VK você encontra saúde, performance e uma comunidade que te impulsiona 
-            a ir além. Treino funcional e cross training para todos os níveis.
+            a ir além. Treinos personalizados, ambiente acolhedor e resultados reais.
           </p>
 
           {/* CTA Buttons */}

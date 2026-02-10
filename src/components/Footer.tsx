@@ -11,10 +11,21 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <a href="#" className="font-display text-3xl font-bold tracking-wider inline-block mb-4">
-              <span className="text-gradient">CFT</span>
-              <span className="text-foreground">VK</span>
-            </a>
+          <a href="#" className="font-display text-2xl md:text-3xl font-bold tracking-wider">
+            <img 
+              src="/images/cftvk-logo.webp" 
+              alt="CFTVK Logo" 
+              style={{ height: '80px' }}
+              className="h-8 md:h-10 mr-2 inline-block" 
+              loading="eager"
+              decoding="async"
+              fetchPriority="high"
+              width={80}
+              height={80}
+            />
+            <span className="text-gradient">Crossfit </span>
+            <span className="text-foreground">VK</span>
+          </a>
             <p className="text-muted-foreground mb-6 max-w-md">
               Centro de Crossfit e Treinamento Funcional. Transformando vidas
               através do movimento, saúde e comunidade.
